@@ -25,8 +25,7 @@ public class Movie {
 
     public Movie() {}
 
-    //Lombok uses this annotation to automatically generate getters and setters
-    //This constructor defines the structure of the movie data
+    //Used Lombok above to automatically generate getters and setters
     public Movie(String title, double rating, String description) {
         this.title = title;
         this.rating = rating;

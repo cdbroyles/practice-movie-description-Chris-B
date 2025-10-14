@@ -9,9 +9,6 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
     @Bean
     public Dotenv dotenv() {
-        return Dotenv.configure()
-                .filename("app.env")
-                .ignoreIfMissing()
-                .load();
+        return Dotenv.configure().filename("app.env").ignoreIfMissing().load();
     }
 }
